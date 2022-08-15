@@ -1,0 +1,7 @@
+bool equalTo(double a, double b) { return ((fabs(a - b) <= EPS) ? true : false); }
+bool notEqual(double a, double b) { return ((fabs(a - b) > EPS) ? true : false); }
+bool lessThan(double a, double b) { return ((a + EPS < b) ? true : false); }
+bool lessThanEqual(double a, double b) { return ((a < b + EPS) ? true : false); }
+bool greaterThan(double a, double b) { return ((a > b + EPS) ? true : false); }
+bool greaterThanEqual(double a, double b) { return ((a + EPS > b) ? true : false); }
+bool negzero(double a) { return (a < EPS) ? true : false; }
